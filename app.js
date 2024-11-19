@@ -99,11 +99,21 @@ togglePlaylist.addEventListener("click", function() {
   let musicControls = document.createElement("div");
   musicControls.classList.add("music-controls");
 
+  let previousSong = document.createElement("button");
+  previousSong.id = "previousSong";
+  previousSong.textContent = "⬅️ Previous";
+  musicControls.appendChild(previousSong);
+  
   let pausePlayButton = document.createElement("button");
   pausePlayButton.id = "pausePlaySong";
   pausePlayButton.textContent = "⏯️ Pause/Play";
   musicControls.appendChild(pausePlayButton);
 
+  let nextSong = document.createElement("button");
+  nextSong.id = "previousSong";
+  nextSong.textContent = "➡️ Next";
+  musicControls.appendChild(nextSong);
+  
   
   pausePlayButton.addEventListener("click", function () {
     if (audioPlayer) {
