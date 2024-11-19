@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(img/Leonardo_Phoenix_A_surreal_CD_with_a_smooth_glossy_surface_app_0.jpg);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 600px;
+}
+nav {
+    background-color: #980707;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.8;
+}
+
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    transition: all 0.8s ease;
+    
+}
+
+.logo:hover{
+    color: white;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ddd;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+button.closeButton:hover{
+    background-color: red;
+}
+
+
+.imgFondo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 350px;
+    transform: translate(-50%,-50%);
+}
+
+.cancion{
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+
+.closeButtonSong {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.closeButtonSong:hover {
+    background-color: #c0392b;
+}
+
+
+.formularioCanciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+
+input[type="file"], input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+input[type="file"] {
+    border: none;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #f0f0f0;
+}
+
+.playList {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    border-right: 2px solid #ccc;
+    padding: 10px;
+  }
+  
+  .optionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .likedSongsButton, .playlistButton {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 155px;
+  }
+  
+  .likedSongsButton:hover, .playlistButton:hover {
+    background-color: #0056b3;
+  }
+
+  .music-controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #980707;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.music-controls button {
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.music-controls button:hover {
+    background-color: #0056b3;
+}
+
+
+.miniCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.miniCard img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.miniCard p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
