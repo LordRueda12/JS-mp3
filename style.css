@@ -15,13 +15,16 @@ nav {
     background-color: #980707;
     padding: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     opacity: 0.8;
 }
 
 
 .logo {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     font-size: 2rem;
     font-weight: bold;
     color: black;
@@ -56,7 +59,7 @@ nav {
 
 .closeButton {
     position: absolute;
-    top: 10px;
+    bottom: 65px;
     right: 10px;
     background-color: white;
     color: black;
@@ -67,6 +70,7 @@ nav {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.8s ease;
+    opacity: 0.1;
 }
 button.closeButton:hover{
     background-color: red;
@@ -99,7 +103,7 @@ button.closeButton:hover{
 
 .closeButtonSong {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     right: 10px;
     padding: 5px 10px;
     background-color: #e74c3c;
@@ -237,3 +241,17 @@ input[type="file"]:hover {
 }
 
 
+.albumCenter{
+    background-color: white;
+    height: 700px;
+    width: 1000px;
+    position: absolute;
+    top: 16%;
+    left: 29%;
+}
+
+.albumCenter img{
+    height: 700px;
+    width: 1000px;
+    object-fit: contain;
+}

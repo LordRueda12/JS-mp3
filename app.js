@@ -45,7 +45,7 @@ togglePlaylist.addEventListener("click", function() {
   
   let closeButton = document.createElement("button");
   closeButton.classList.add("closeButton");
-  closeButton.textContent = "X";
+  closeButton.textContent = "x";
   playList.appendChild(closeButton);
 
   closeButton.addEventListener("click", function() {
@@ -70,6 +70,20 @@ togglePlaylist.addEventListener("click", function() {
     songName.textContent = `Canción: ${cancion.nombreCancion}`;
     miniCard.appendChild(songName);
 
+    miniCard.addEventListener("click",function(){
+      let albumContainer = document.createElement("div")
+      document.body.style.backgroundImage = 'none'
+      albumContainer.classList.add("albumCenter") 
+      document.body.appendChild(albumContainer)
+      const nav = document.getElementById("nav");
+      nav.style.opacity = "1";
+
+      let imgcontainer = document.createElement("img");
+      imgcontainer.src = cancion.imgAlbum;
+      imgcontainer.alt = `${cancion.nombreArtista} - ${cancion.nombreCancion}`;
+      albumContainer.appendChild(imgcontainer);
+  
+  })
     miniCard.addEventListener("click", function () {
       if (audioPlayer) {
         audioPlayer.pause(); 
